@@ -9,11 +9,22 @@ Adding an Org to a Channel While Network Run
 
 ## Setup Environment
 
-1. generate certifacates and keys for network entities
+1. generate certifacates and keys for base network entities
  ```
  $ ./generate.sh
  ```
-2. start network
+
+2. copy file name *_sk from part <pwd>/crypto-config/peerOrganizations/org1.example.com/ca/ paste into docker-compose.yaml
+ ```
+    ...
+    environment:
+      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+      - FABRIC_CA_SERVER_CA_NAME=ca1.example.com
+      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/<paste *_sk>
+    ...
+ ```
+3. start network
 
  ```
  $ ./start.sh
