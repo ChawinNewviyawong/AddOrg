@@ -18,13 +18,13 @@ Adding an Org to a Channel While Network Run
    <br>
    copy other ca filename to other org
  ```
-    ...
-    environment:
-      - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
-      - FABRIC_CA_SERVER_CA_NAME=ca1.example.com
-      - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/<paste *_sk>
-    ...
+ ...
+ environment:
+   - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+   - FABRIC_CA_SERVER_CA_NAME=ca1.example.com
+   - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.org1.example.com-cert.pem
+   - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/<paste *_sk>
+ ...
  ```
 
 3. start network
