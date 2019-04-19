@@ -4,7 +4,7 @@ Adding an Org to a Channel While Network Run
 ## Clone Project
 
  ```
- $ git clone https://github.com/ChawinNewviyawong/AddOrgMultiHost.git
+ $ git clone https://github.com/ChawinNewviyawong/AddOrg.git
  ```
 
 ## Setup Environment
