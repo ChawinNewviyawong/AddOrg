@@ -14,7 +14,7 @@ Adding an Org to a Channel While Network Run
  $ ./generate.sh
  ```
 
-2. copy file name *_sk from part `pwd`/crypto-config/peerOrganizations/org1.example.com/ca/ paste into docker-compose.yaml
+2. copy filename *_sk from part `pwd`/crypto-config/peerOrganizations/org1.example.com/ca/ paste into docker-compose.yaml
  ```
     ...
     environment:
@@ -24,6 +24,8 @@ Adding an Org to a Channel While Network Run
       - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/<paste *_sk>
     ...
  ```
+   copy other ca filename to other org
+
 3. start network
 
  ```
