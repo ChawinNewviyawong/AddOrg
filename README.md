@@ -15,6 +15,7 @@ Adding an Org to a Channel While Network Run
  ```
 
 2. copy ca filename *_sk from part `pwd`/crypto-config/peerOrganizations/org1.example.com/ca/ paste into docker-compose.yaml
+   <br>
    copy other ca filename to other org
  ```
     ...
