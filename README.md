@@ -15,8 +15,6 @@ Adding an Org to a Channel While Network Run
  ```
 
  #### 2. copy ca filename *_sk from part `pwd`/crypto-config/peerOrganizations/org1.example.com/ca/ paste into docker-compose.yaml
-   <br>
-   and copy other ca filename to other org
 
   ```
   ...
@@ -27,6 +25,7 @@ Adding an Org to a Channel While Network Run
     - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/<paste *_sk>
   ...
   ```
+  copy other ca filename to other org
 
  #### 3. start network
 
@@ -36,12 +35,10 @@ Adding an Org to a Channel While Network Run
 
 ## Generate Org3 Crypto Material
 
- ```
- $ cd org3-artifacts
- ```
  #### 1. generate Org3 crypto material
 
  ```
+ $ cd org3-artifacts
  $ ../../bin/cryptogen generate --config=./crypto-config-org2.yaml
  ```
  this command to generate key and certificates for Org3
