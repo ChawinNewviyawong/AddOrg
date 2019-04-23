@@ -9,7 +9,11 @@ Adding an Org to a Channel While Network Run
 
 ## Setup Environment
 
- #### 1. generate certifacates and keys for base network entities
+ #### 1. generate certifaca
+
+ ```
+ 
+ ```es and keys for base network entities
  ```
  $ ./generate.sh
  ```
@@ -30,7 +34,7 @@ Adding an Org to a Channel While Network Run
  #### 3. start network
 
  ```
- $ ./start.sh
+ $ ./network-start.sh
  ```
 
 ## Generate Org3 Crypto Material
