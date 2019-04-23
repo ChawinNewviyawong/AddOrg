@@ -39,7 +39,7 @@ Adding an Org to a Channel While Network Run
 
  ```
  $ cd org3-artifacts
- $ ../../bin/cryptogen generate --config=./crypto-config-org2.yaml
+ $ ../../bin/cryptogen generate --config=./crypto-config-org3.yaml
  ```
  this command to generate key and certificates for Org3
 

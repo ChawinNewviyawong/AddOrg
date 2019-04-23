@@ -2,6 +2,7 @@ version: '2'
 
 volumes:
   peer0.org1.example.com:
+  peer0.org2.example.com:
 
 networks:
   basic:
@@ -141,8 +142,8 @@ services:
         - ./crypto-config/peerOrganizations/org2.example.com/peers/peer0.org2.example.com/tls:/etc/hyperledger/fabric/tls
         - peer0.org2.example.com:/var/hyperledger/production
     ports:
-      - 7051:7051
-      - 7053:7053
+      - 8051:7051
+      - 8053:7053
     networks:
       - basic
 
@@ -153,9 +154,9 @@ services:
     # for CouchDB.  This will prevent CouchDB from operating in an "Admin Party" mode.
     environment:
       - COUCHDB_USER=
-      - COUCHDB_PASSWORD=
+      - COUCHDB_Ppeer0.org2.example.com
     ports:
-      - 5984:5984
+      - 5984:5984peer0.org2.example.com
     networks:
       - basic
       
